@@ -1,27 +1,27 @@
 package com.example.lifefill.data.api;
 
 import com.example.lifefill.core.api.EpicFhirClient;
-import com.example.lifefill.core.model.Allergy;
-import com.example.lifefill.core.model.Patient;
 
-import java.util.Collections;
-import java.util.List;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Stub implementation of EpicFhirClient.
- * Replace with Retrofit + AppAuth + FHIR parsing.
+ * Builds the Retrofit instance and exposes the FHIR API for the hackathon demo.
+ * Points to the open SMART on FHIR sandbox.
  */
-public class EpicFhirClientImpl implements EpicFhirClient {
+public final class EpicFhirClientImpl {
 
-    @Override
-    public Patient fetchPatient(String accessToken) {
-        // TODO: Retrofit call to Epic FHIR Patient endpoint
-        return null;
+    private final EpicFhirClient api;
+
+    public EpicFhirClientImpl() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://r4.smarthealthit.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        this.api = retrofit.create(EpicFhirClient.class);
     }
 
-    @Override
-    public List<Allergy> fetchAllergies(String accessToken) {
-        // TODO: Retrofit call to Epic FHIR AllergyIntolerance endpoint
-        return Collections.emptyList();
+    public EpicFhirClient getApi() {
+        return api;
     }
 }

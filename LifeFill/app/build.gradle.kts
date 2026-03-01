@@ -38,6 +38,8 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":data"))
     implementation(libs.appcompat)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)

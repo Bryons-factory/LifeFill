@@ -21,7 +21,7 @@ public final class LifeFillDataModule {
     private static PatientRepository patientRepository;
     private static AllergyRepository allergyRepository;
     private static InsuranceRepository insuranceRepository;
-    private static EpicFhirClient epicFhirClient;
+    private static EpicFhirClientImpl fhirClient;
     private static BulkFhirExportClient bulkFhirExportClient;
     private static BulkExportJobManager bulkExportJobManager;
 
@@ -46,11 +46,17 @@ public final class LifeFillDataModule {
         return insuranceRepository;
     }
 
-    public static EpicFhirClient getEpicFhirClient() {
-        if (epicFhirClient == null) {
-            epicFhirClient = new EpicFhirClientImpl();
+    /** Returns the FHIR client holder; use getApi() for Retrofit calls. */
+    public static EpicFhirClientImpl getFhirClient() {
+        if (fhirClient == null) {
+            fhirClient = new EpicFhirClientImpl();
         }
-        return epicFhirClient;
+        return fhirClient;
+    }
+
+    /** Returns the Retrofit FHIR API (e.g. getPatientMedications). */
+    public static EpicFhirClient getEpicFhirClient() {
+        return getFhirClient().getApi();
     }
 
     public static BulkFhirExportClient getBulkFhirExportClient() {
