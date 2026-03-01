@@ -30,6 +30,8 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(libs.appcompat)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
 }

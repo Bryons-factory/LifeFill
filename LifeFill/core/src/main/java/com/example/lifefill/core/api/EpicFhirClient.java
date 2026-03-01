@@ -1,14 +1,18 @@
 package com.example.lifefill.core.api;
 
-import com.example.lifefill.core.model.Patient;
+import com.google.gson.JsonObject;
 
-import java.util.List;
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Headers;
+import retrofit2.http.Query;
 
 /**
- * Contract for Epic FHIR API access.
- * Implemented by the data module; used by the app (UI) module for sync flows.
+ * Retrofit contract for Epic / FHIR API access.
+ * For the hackathon demo we pull raw JSON (e.g. Medications) from the SMART on FHIR sandbox.
  */
 public interface EpicFhirClient {
-    Patient fetchPatient(String accessToken);
-    List<com.example.lifefill.core.model.Allergy> fetchAllergies(String accessToken);
+    @Headers("Accept: application/fhir+json")
+    @GET("MedicationRequest")
+    Call<JsonObject> getPatientMedications(@Query("patient") String patientId);
 }
