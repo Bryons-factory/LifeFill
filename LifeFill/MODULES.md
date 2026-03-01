@@ -34,6 +34,12 @@ Patient patient = repo.getPatient();
 2. Implement it in **data** (e.g. `data.api.EpicFhirClientImpl`)
 3. Expose via `LifeFillDataModule` in **data**
 
+## Bulk FHIR (Async $export)
+
+- **Core:** `BulkFhirExportClient`, `BulkExportJobStatus` – kick-off, poll status, result file list.
+- **Data:** `BulkFhirExportClientImpl`, `BulkExportJobManager`, `NdjsonStreamParser` – orchestration and streaming NDJSON.
+- See **`docs/BULK_FHIR_IMPLEMENTATION.md`** for the full implementation strategy (auth, orchestration, ingestion, storage).
+
 ## Adding New Models
 
 Add POJOs in **core.model** (e.g. `Patient`, `Allergy`, `Insurance`). Both app and data depend on core.

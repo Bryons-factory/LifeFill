@@ -1,10 +1,13 @@
 package com.example.lifefill.data;
 
+import com.example.lifefill.core.api.BulkFhirExportClient;
 import com.example.lifefill.core.api.EpicFhirClient;
 import com.example.lifefill.core.repository.AllergyRepository;
 import com.example.lifefill.core.repository.InsuranceRepository;
 import com.example.lifefill.core.repository.PatientRepository;
+import com.example.lifefill.data.api.BulkFhirExportClientImpl;
 import com.example.lifefill.data.api.EpicFhirClientImpl;
+import com.example.lifefill.data.bulk.BulkExportJobManager;
 import com.example.lifefill.data.repository.AllergyRepositoryImpl;
 import com.example.lifefill.data.repository.InsuranceRepositoryImpl;
 import com.example.lifefill.data.repository.PatientRepositoryImpl;
@@ -19,6 +22,8 @@ public final class LifeFillDataModule {
     private static AllergyRepository allergyRepository;
     private static InsuranceRepository insuranceRepository;
     private static EpicFhirClient epicFhirClient;
+    private static BulkFhirExportClient bulkFhirExportClient;
+    private static BulkExportJobManager bulkExportJobManager;
 
     public static PatientRepository getPatientRepository() {
         if (patientRepository == null) {
@@ -46,5 +51,19 @@ public final class LifeFillDataModule {
             epicFhirClient = new EpicFhirClientImpl();
         }
         return epicFhirClient;
+    }
+
+    public static BulkFhirExportClient getBulkFhirExportClient() {
+        if (bulkFhirExportClient == null) {
+            bulkFhirExportClient = new BulkFhirExportClientImpl();
+        }
+        return bulkFhirExportClient;
+    }
+
+    public static BulkExportJobManager getBulkExportJobManager() {
+        if (bulkExportJobManager == null) {
+            bulkExportJobManager = new BulkExportJobManager(getBulkFhirExportClient());
+        }
+        return bulkExportJobManager;
     }
 }
