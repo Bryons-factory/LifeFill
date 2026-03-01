@@ -30,6 +30,14 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(libs.appcompat)
+    
+    // Room
+    implementation(libs.room.runtime)
+    annotationProcessor(libs.room.compiler)
+    
+    // SQLCipher for encryption
+    implementation(libs.sqlcipher)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
 }
