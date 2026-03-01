@@ -1,22 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_personal"
-        android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="@string/title_personal" />
-    <item
-        android:id="@+id/navigation_medical"
-        android:icon="@android:drawable/ic_menu_info_details"
-        android:title="@string/title_medical" />
-    <item
         android:id="@+id/navigation_home"
         android:icon="@android:drawable/ic_menu_today"
         android:title="@string/title_home" />
     <item
-        android:id="@+id/navigation_insurance"
-        android:icon="@android:drawable/ic_menu_agenda"
-        android:title="@string/title_insurance" />
+        android:id="@+id/navigation_load_data"
+        android:icon="@android:drawable/stat_sys_download"
+        android:title="@string/title_load_data" />
     <item
-        android:id="@+id/navigation_contacts"
-        android:icon="@android:drawable/ic_menu_call"
-        android:title="@string/title_contacts" />
+        android:id="@+id/navigation_test_data"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/title_test_data" />
 </menu>

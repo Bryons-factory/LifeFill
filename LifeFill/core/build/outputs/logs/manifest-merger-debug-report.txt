@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml:2:13-83
-INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml:2:13-83
+ADDED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml:2:13-83
+INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml:2:13-83
 	package
-		INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml
+		INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml
 	xmlns:android
-		ADDED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml:2:23-81
+		ADDED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml:2:23-81
 uses-sdk
-INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml reason: use-sdk injection requested
-INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml
-INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml
+INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml
+INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml
+		INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\david\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest16598685013053039935.xml
+		INJECTED from C:\Users\Bryon\OneDrive\Documents\GitHub\LifeFill\LifeFill\core\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest15384306501598685872.xml
