@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_personal" />
+    <item
+        android:id="@+id/navigation_medical"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_medical" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_insurance"
+        android:icon="@drawable/ic_shield_black_24dp"
+        android:title="@string/title_insurance" />
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="@string/title_contacts" />
+</menu>
