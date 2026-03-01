@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="black">#FF000000</color>
+
+    <!-- =========================
+         CORE BRAND COLORS
+         ========================= -->
+
+    <!-- Primary brand color: trustworthy healthcare blue -->
+    <color name="primary_blue">#1F6FEB</color>
+
+    <!-- Darker version of primary for pressed buttons, top bars, or active states -->
+    <color name="primary_blue_dark">#174EA6</color>
+
+    <!-- Secondary brand color: calming medical teal -->
+    <color name="secondary_teal">#14B8A6</color>
+
+    <!-- Dark teal for selected chips, hover states, or secondary buttons -->
+    <color name="secondary_teal_dark">#0F766E</color>
+
+    <!-- Security accent: deep navy for headers, secure screens, or login areas -->
+    <color name="security_navy">#0B1F33</color>
+
+    <!-- Supporting dark tone for cards, navigation, or secure panels -->
+    <color name="security_slate">#1E293B</color>
+
+
+    <!-- =========================
+         BACKGROUNDS / SURFACES
+         ========================= -->
+
+    <!-- Main app background: clean hospital-like off white -->
+    <color name="background_light">#F8FBFF</color>
+
+    <!-- Secondary surface for cards, panels, and containers -->
+    <color name="surface_white">#FFFFFF</color>
+
+    <!-- Soft tinted surface for sections like patient info or dashboard groups -->
+    <color name="surface_blue_tint">#EAF4FF</color>
+
+    <!-- Dark surface for secure mode, admin panels, or dark cards -->
+    <color name="surface_dark">#102235</color>
+
+    <!-- Divider or subtle border color for cards and fields -->
+    <color name="border_light">#D6E4F0</color>
+
+
+    <!-- =========================
+         TEXT COLORS
+         ========================= -->
+
+    <!-- Main text color for readability on light backgrounds -->
+    <color name="text_primary">#334155</color>
+
+    <!-- Secondary text for descriptions, labels, or metadata -->
+    <color name="text_secondary">#64748B</color>
+
+    <!-- Text on dark backgrounds such as navy cards or secure banners -->
+    <color name="text_on_dark">#E2E8F0</color>
+
+    <!-- Text on primary buttons or bright colored surfaces -->
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Muted text for hints, placeholders, or disabled labels -->
+    <color name="text_muted">#CBD5E1</color>
+
+
+    <!-- =========================
+         STATUS / FEEDBACK COLORS
+         ========================= -->
+
+    <!-- Success color for verified account, secure connection, healthy status -->
+    <color name="success_green">#16A34A</color>
+
+    <!-- Soft success background for banners or status pills -->
+    <color name="success_green_light">#DCFCE7</color>
+
+    <!-- Warning color for expiring credentials, pending review, or alerts -->
+    <color name="warning_amber">#F59E0B</color>
+
+    <!-- Light warning background for notices and caution cards -->
+    <color name="warning_amber_light">#FEF3C7</color>
+
+    <!-- Error color for failed authentication, emergency alerts, or invalid fields -->
+    <color name="error_red">#DC2626</color>
+
+    <!-- Light error background for error messages or alert banners -->
+    <color name="error_red_light">#FEE2E2</color>
+
+    <!-- Info color for neutral system messages or care notifications -->
+    <color name="info_cyan">#0891B2</color>
+
+    <!-- Light info background for informational cards -->
+    <color name="info_cyan_light">#CFFAFE</color>
+
+
+    <!-- =========================
+         SPECIALTY ACCENTS
+         ========================= -->
+
+    <!-- Privacy accent for shield icons, encryption notices, or security badges -->
+    <color name="privacy_purple">#7C3AED</color>
+
+    <!-- Light privacy background for secure info panels -->
+    <color name="privacy_purple_light">#EDE9FE</color>
+
+    <!-- Emergency accent for urgent care, emergency buttons, or SOS features -->
+    <color name="emergency_orange">#EA580C</color>
+
+    <!-- Light emergency background for urgent banners -->
+    <color name="emergency_orange_light">#FFEDD5</color>
+
+
+    <!-- =========================
+         COMMON NEUTRALS
+         ========================= -->
+
+    <!-- Pure white for cards, text on dark, and button text -->
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Near black for icons or strong contrast text -->
+    <color name="black">#FF000000</color>
+
 </resources>
