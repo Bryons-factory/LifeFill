@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addMedicalFragment">
+
+    <fragment
+        android:id="@+id/addMedicalFragment"
+        android:name="com.example.myapplication2222.AddMedicalFragment"
+        android:label="fragment_add_medical"
+        tools:layout="@layout/fragment_add_medical" >
+        <action
+            android:id="@+id/action_addMedicalFragment_to_addMedicationFragment"
+            app:destination="@id/addMedicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicationFragment"
+        android:name="com.example.myapplication2222.AddMedicationFragment"
+        android:label="fragment_add_medication"
+        tools:layout="@layout/fragment_add_medication" />
+</navigation>
