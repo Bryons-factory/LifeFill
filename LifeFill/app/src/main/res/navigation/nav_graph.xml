@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.example.lifefill.HomeFragment"
-        android:label="Home"
+        android:label="@string/home_fragment_label"
         tools:layout="@layout/fragment_home" />
 </navigation>
