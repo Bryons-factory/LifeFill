@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.lifefill.data.LifeFillDataModule;
 import com.example.lifefill.databinding.FragmentFirstBinding;
@@ -41,21 +40,26 @@ public class FirstFragment extends Fragment {
 
     private void fetchDemoEhrData() {
         String testPatientId = "87a339d0-8cae-418e-89c7-8651e6aab3c6";
+        binding.textviewFirst.setText("Fetching data...");
 
         LifeFillDataModule.getFhirClient().getApi().getPatientMedications(testPatientId)
                 .enqueue(new Callback<JsonObject>() {
                     @Override
                     public void onResponse(@NonNull Call<JsonObject> call, @NonNull Response<JsonObject> response) {
                         if (response.isSuccessful() && response.body() != null) {
-                            Log.d(TAG, "Success: " + response.body().toString());
+                            String data = response.body().toString();
+                            Log.d(TAG, "Success: " + data);
+                            binding.textviewFirst.setText(data);
                         } else {
                             Log.e(TAG, "Failed: " + response.code());
+                            binding.textviewFirst.setText("Failed to fetch data: " + response.code());
                         }
                     }
 
                     @Override
                     public void onFailure(@NonNull Call<JsonObject> call, @NonNull Throwable t) {
                         Log.e(TAG, "Network Error: " + t.getMessage());
+                        binding.textviewFirst.setText("Network Error: " + t.getMessage());
                     }
                 });
     }
