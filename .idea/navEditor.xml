@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="navEditor-manualLayoutAlgorithm2">
-    <option name="myPositions">
-      <map>
-        <entry key="nav_graph.xml">
-          <value>
-            <LayoutPositions>
-              <option name="myPositions">
-                <map>
-                  <entry key="HomeFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </LayoutPositions>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
+  <!--
+    Navigation Editor layout metadata (navEditor-manualLayoutAlgorithm2) has been
+    intentionally removed from version control to avoid IDE-specific churn.
+  -->
 </project>
