@@ -4,16 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.lifefill"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.lifefill"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,6 +35,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
+    implementation(project(":data"))
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

@@ -24,4 +24,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "LifeFill"
 include(":app")
+include(":core")
+include(":data")
  
