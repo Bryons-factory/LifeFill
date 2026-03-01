@@ -32,6 +32,11 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
+    
+    implementation(libs.room.runtime)
+    annotationProcessor(libs.room.compiler)
+    implementation(libs.sqlcipher)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
 }
